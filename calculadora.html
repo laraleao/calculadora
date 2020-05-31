@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULADORA</title>
+</head>
+<body style="background: url(https://cdn-cv.r4you.co/wp-content/uploads/2018/02/iStock-498313087.jpg); background-repeat: no-repeat; background-position: right; background-size: 100%">
+<span><strong>Calculadora</strong></span>
+<p>*projeto em conjunto com os colegas de classe*</p>
+  <form>
+    <table cellspacing="0" celppading="2" border="2">
+      <tr>
+        <td colspan="4">
+          <input type="number" name="numero" id="primeiroNumero">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <input type="number" name="numero" id="segundoNumero">
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="+" onclick="somar()"></td>
+        <td><input type="button" value="-" onclick="subtrair()"></td>
+        <td><input type="button" value="*" onclick="multiplicar()"></td>
+        <td><input type="button" value="/" onclick="dividir()"></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <input type="number" name="numero" id="resultado" readonly>
+          <!-- <div id="resultado"> -->
+        </td>
+      </tr>
+    </table>
+  </form>
+  <script>
+
+    function somar() {
+
+      const primeiroNumero = document.getElementById("primeiroNumero");
+      const segundoNumero = document.getElementById("segundoNumero");
+
+      document.getElementById("resultado").value = 
+      Number(primeiroNumero.value) 
+      + 
+      Number(segundoNumero.value);
+
+      primeiroNumero.value="";
+      segundoNumero.value="";
+    }
+
+    function subtrair() {
+      document.getElementById("resultado").value = Number(document.getElementById("primeiroNumero").value) - Number(document.getElementById("segundoNumero").value);
+
+      document.getElementById("primeiroNumero").value="";
+      document.getElementById("segundoNumero").value="";
+    }
+
+    function multiplicar() {
+      document.getElementById("resultado").value = Number(document.getElementById("primeiroNumero").value) * Number(document.getElementById("segundoNumero").value);
+
+      document.getElementById("primeiroNumero").value="";
+      document.getElementById("segundoNumero").value="";
+    }
+
+    function dividir() {
+      document.getElementById("resultado").value = Number(document.getElementById("primeiroNumero").value) / Number(document.getElementById("segundoNumero").value);
+      
+      document.getElementById("primeiroNumero").value="";
+      document.getElementById("segundoNumero").value="";
+    }
+
+  </script>
+</body>
+</html>
