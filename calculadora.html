@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CALCULADORA</title>
+  <title>CALCULADORA</title> 
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style/calculadora.css">
+
 </head>
-<body style="background: url(https://cdn-cv.r4you.co/wp-content/uploads/2018/02/iStock-498313087.jpg); background-repeat: no-repeat; background-position: right; background-size: 100%">
-<span><strong>Calculadora</strong></span>
-<p>*projeto em conjunto com os colegas de classe*</p>
+
+<body>
+
+  <div id="header">
+
+    <span><strong>Calculadora</strong></span>
+    <img src="/calculator.svg" alt="imagem dos operadores básicos de operações matemáticas">
+
+  </div>
+ 
   <form>
-    <table cellspacing="0" celppading="2" border="2">
+    <table style="text-align:center;" cellspacing="4" celppading="4" border="2">
       <tr>
         <td colspan="4">
           <input type="number" name="numero" id="primeiroNumero">
@@ -20,7 +32,7 @@
           <input type="number" name="numero" id="segundoNumero">
         </td>
       </tr>
-      <tr>
+      <tr class="operadores">
         <td><input type="button" value="+" onclick="somar()"></td>
         <td><input type="button" value="-" onclick="subtrair()"></td>
         <td><input type="button" value="*" onclick="multiplicar()"></td>

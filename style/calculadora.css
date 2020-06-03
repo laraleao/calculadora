@@ -1,0 +1,60 @@
+:root {
+  --title-color: #322153;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background: url(https://cdn-cv.r4you.co/wp-content/uploads/2018/02/iStock-498313087.jpg); 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div#header span strong {
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-left: 20px ;
+  text-align: center;
+  display: flex;
+  color: var(--title-color);
+  font-size: 60px;
+  justify-content: center;
+}
+
+div#header img {
+  height: 63px;
+  width: 63px;
+  margin-left: center;
+  margin-right: center;
+  width: 100%;
+  
+}
+
+input[type="number"] {
+  background: transparent;
+  border: none;
+}
+
+form table {
+  margin: 0 auto;
+  margin-top: 22px;
+  width: 20%; 
+ }
+
+input[type="button"] {
+  margin: 0 auto;
+  background: none;
+  border: black;
+  display: flex;
+  width:19%; 
+}
